@@ -1,11 +1,9 @@
 import './App.css';
-import { Card } from './components/Card/Card';
-import { SearchBar } from './components/SearchBar/SearchBar';
+import Card from './components/Card/Card';
 
 function App() {
   return (
     <div>
-      <SearchBar />
       <Card title="" url="" />
     </div>
   );
