@@ -8,11 +8,13 @@ const Card = () => {
 
 
     const generateQR = (e) => {
+
         e.preventDefault();
         setUrl(e.target.value)
+
     }
     return (
-        <>
+        <div className="body">
             <form className="searchBar" method="POST">
                 <input
                     type="text"
@@ -35,12 +37,12 @@ const Card = () => {
                     {!url && <p>QR Code will be generated here</p>}
                 </div>
                 <div className="card__text">
-                    {/* {props.title && <h2 >{props.title}</h2>} */}
-                    {/* {!title && <h2 >QR Code</h2>} */}
+
+                    <h2 >QR Code</h2>
 
                     <p>Scan the QR code to visit your website</p>
                 </div>
-            </div></>
+            </div></div>
     )
 }
 

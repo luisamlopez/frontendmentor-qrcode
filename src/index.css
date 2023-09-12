@@ -13,3 +13,7 @@ body {
   display: grid;
   place-items: center;
 }
+
+.attribution {
+  text-align: center;
+}
