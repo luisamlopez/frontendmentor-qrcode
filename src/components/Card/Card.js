@@ -8,21 +8,20 @@ const Card = () => {
 
 
     const generateQR = (e) => {
-
         e.preventDefault();
-        setUrl(e.target.value)
-
+        setUrl(e.target.value);
     }
+
     return (
         <div className="body">
-            <form className="searchBar" method="POST">
+            <div className="searchBar" method="POST">
                 <input
                     type="text"
                     placeholder="Search"
                     value={url}
                     onChange={generateQR}
                 />
-            </form>
+            </div>
 
             <div className="card">
                 <div className="card__qr">
